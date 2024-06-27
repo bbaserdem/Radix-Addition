@@ -13,3 +13,13 @@ For two binary numbers; it would look like;
 ```
 
 The each n-ary digit is input starting from the lowest 
+
+
+# Notes
+
+To make poetry use pytorch official sources, I used the following commands
+
+```
+$ poetry source add --priority explicit pytorch_cpu https://download.pytorch.org/whl/cpu
+$ poetry add --source pytorch_cpu torch torchvision
+```

@@ -11,6 +11,14 @@ keywords = ["radix"]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+numpy = "^2.0.0"
+torch = {version = "^2.3.1+cpu", source = "pytorch_cpu"}
+torchvision = {version = "^0.18.1+cpu", source = "pytorch_cpu"}
+
+[[tool.poetry.source]]
+name = "pytorch_cpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"
 
 [build-system]
 requires = ["poetry-core"]
