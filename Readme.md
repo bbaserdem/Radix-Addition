@@ -1,4 +1,4 @@
-# Binary Addition
+# Radix Addition
 
 This is a toy package on utilizing `pytorch` to teach a RNN binary addition task.
 The addition task is to add several numbers represented in some base (not just binary, counterintuitively) strings.

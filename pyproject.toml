@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "radix-addition"
+version = "0.0.1"
+description = "A demonstration of ML by performing base-N addition"
+authors = ["Batuhan Baserdem <baserdem.batuhan@gmail.com>"]
+license = "MIT"
+readme = "Readme.md"
+homepage = "https://github.com/bbaserdem/radix-addition-python"
+repository = "https://github.com/bbaserdem/radix-addition-python"
+keywords = ["radix"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
