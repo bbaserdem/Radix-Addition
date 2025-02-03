@@ -9,13 +9,15 @@ maintainers = [
 ]
 description = "A demonstration of ML by performing base-N addition"
 readme = "Readme.md"
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
 ]
 license = "MIT"
 license-files = ["LICEN[CS]E*"]
+dependencies = [
+]
 
 [project.urls]
 Homepage = "https://github.com/bbaserdem/radix-addition-python"
@@ -26,3 +28,8 @@ radix-addition = "radix_addition:main"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.6.7"
+]

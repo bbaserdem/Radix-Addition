@@ -6,7 +6,7 @@
 !/.gitignore
 
 # Grab nix things
-!/flake.nix
+!/**.nix
 !/flake.lock
 
 # Grab uv things
