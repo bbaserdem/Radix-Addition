@@ -1,25 +1,28 @@
-[tool.poetry]
+[project]
 name = "radix-addition"
 version = "0.0.1"
+authors = [
+    { name="Batuhan Baserdem", email="baserdem.batuhan@gmail.com" },
+]
+maintainers = [
+    { name="Batuhan Baserdem", email="baserdem.batuhan@gmail.com" },
+]
 description = "A demonstration of ML by performing base-N addition"
-authors = ["Batuhan Baserdem <baserdem.batuhan@gmail.com>"]
-license = "MIT"
 readme = "Readme.md"
-homepage = "https://github.com/bbaserdem/radix-addition-python"
-repository = "https://github.com/bbaserdem/radix-addition-python"
-keywords = ["radix"]
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
 
-[tool.poetry.dependencies]
-python = "^3.11"
-numpy = "^2.0.0"
-torch = {version = "^2.3.1+cpu", source = "pytorch_cpu"}
-torchvision = {version = "^0.18.1+cpu", source = "pytorch_cpu"}
+[project.urls]
+Homepage = "https://github.com/bbaserdem/radix-addition-python"
 
-[[tool.poetry.source]]
-name = "pytorch_cpu"
-url = "https://download.pytorch.org/whl/cpu"
-priority = "explicit"
+[project.scripts]
+radix-addition = "radix_addition:main"
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"

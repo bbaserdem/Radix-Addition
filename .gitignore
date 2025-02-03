@@ -1,0 +1,19 @@
+# Gitignore file
+
+*
+!/Readme.md
+!/LICENCE
+!/.gitignore
+
+# Grab nix things
+!/flake.nix
+!/flake.lock
+
+# Grab uv things
+!/pyproject.toml
+!/uv.lock
+
+# Grab everything in src directory, except __pycache__
+!/src
+!/src/**
+/src/**/__pycache__
